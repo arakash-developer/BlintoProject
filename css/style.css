@@ -1,0 +1,35 @@
+/* reset code */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+
+/* global styles */
+body{
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --primary-color: #007BFF;
+    --secondary-color: #6C757D;
+    --light-color: #F8F9FA;
+    --dark-color: #343A40;
+}
+
+
+/* container */
+.container{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+

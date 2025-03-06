@@ -2,11 +2,11 @@
 @font-face {
   font-family: "Jakarta-Font";
   src: url("../assets/fonts/PlusJakartaSans-Light.ttf") format("truetype"),
-  url("../assets/fonts/PlusJakartaSans-Regular.ttf") format("truetype"),
-  url("../assets/fonts/PlusJakartaSans-Medium.ttf") format("truetype"),
-  url("../assets/fonts/PlusJakartaSans-SemiBold.ttf") format("truetype"),
-  url("../assets/fonts/PlusJakartaSans-Bold.ttf") format("truetype"),
-  url("../assets/fonts/PlusJakartaSans-ExtraBold.ttf") format("truetype");
+    url("../assets/fonts/PlusJakartaSans-Regular.ttf") format("truetype"),
+    url("../assets/fonts/PlusJakartaSans-Medium.ttf") format("truetype"),
+    url("../assets/fonts/PlusJakartaSans-SemiBold.ttf") format("truetype"),
+    url("../assets/fonts/PlusJakartaSans-Bold.ttf") format("truetype"),
+    url("../assets/fonts/PlusJakartaSans-ExtraBold.ttf") format("truetype");
 }
 /* reset code */
 * {
@@ -80,22 +80,35 @@ img {
   letter-spacing: -0.01em;
   color: #fff;
 }
-/* 
+.navbar .container {
+  flex-direction: column;
+}
+.navbar .brand {
+  width: 100%;
+}
+.navbar .brand .hamburger {
+  cursor: pointer;
+}
 .navbar .container {
   position: relative;
 }
-.navbar .container ul{
+.navbar .container .side{
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
+  width: 100%;
+  padding: 16px 0px;
+  top: 100%;
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  top: 100%;  
+  background: #000000;
 }
-.navbar .container .nav_button{
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 100%;
-} */
+.navbar .container ul {
+  flex-basis: 100%;
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+}
+.navbar .container .nav_button {
+  margin-top: 16px;
+}
+

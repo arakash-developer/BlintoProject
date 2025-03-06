@@ -7,10 +7,19 @@
 }
 /* lg */
 @media screen and (min-width: 1023px) {
-  .navbar .container ul {
-    position: static;
-    flex-direction: row;
-  }
+    .navbar .container {
+        flex-direction: row;
+      }
+      .navbar .container ul {
+        flex-basis: auto;
+        flex-direction: row;
+      }
+      .navbar .brand {
+        width: auto;
+      }
+      .navbar .container .nav_button {
+        margin-top: 0px;
+      }
 }
 /* xl */
 

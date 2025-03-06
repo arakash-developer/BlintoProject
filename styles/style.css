@@ -414,3 +414,46 @@ img {
   border-radius: 32px;
   width: 100%;
 }
+/* End procrastinators */
+
+/* Testimonial */
+.testimonial {
+  padding: 96px 0px;
+}
+.testimonial .container .heading > h4 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 143%;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: #4f46e5;
+  border-radius: 1234px;
+  padding: 4px 10px;
+  width: 103px;
+  margin: 0px auto;
+  background: #eef2ff;
+}
+.testimonial .container .heading > h2 {
+  font-family: var(--font-family);
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 122%;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: #1e293b;
+  margin: 24px 0px;
+}
+.testimonial .container .heading > p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  text-align: center;
+  color: #475569;
+}
+.testimonial .container .testimonial_inner {
+  margin-top: 64px;
+}
+
+/* End Testimonial */

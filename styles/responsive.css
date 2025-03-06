@@ -7,6 +7,9 @@
 }
 /* lg */
 @media screen and (min-width: 1023px) {
+  .container {
+    padding: 0px 8px;
+  }
   .navbar .container {
     flex-wrap: nowrap;
     background: transparent;

@@ -33,6 +33,12 @@
   .navbar .container .navbar_collapse .nav_button {
     margin-top: 0px;
   }
+  .work_lazy .container .work_lazy_inner span {
+    border-right: 1px solid #cbd5e1;
+    height: 100%;
+    width: 0;
+    display: inline-block;
+  }
 }
 /* xl */
 

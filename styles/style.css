@@ -1,33 +1,14 @@
 /* set  font */
-@font-face {
-  font-family: "Jakarta-extralight";
-  src: url("../assets/fonts/PlusJakartaSans-ExtraLight.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Jakarta-light";
-  src: url("../assets/fonts/PlusJakartaSans-Light.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Jakarta-regular";
-  src: url("../assets/fonts/PlusJakartaSans-Regular.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Jakarta-medium";
-  src: url("../assets/fonts/PlusJakartaSans-Medium.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Jakarta-semibold";
-  src: url("../assets/fonts/PlusJakartaSans-SemiBold.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Jakarta-bold";
-  src: url("../assets/fonts/PlusJakartaSans-Bold.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Jakarta-extrabold";
-  src: url("../assets/fonts/PlusJakartaSans-ExtraBold.ttf") format("truetype");
-}
 
+@font-face {
+  font-family: "Jakarta-Font";
+  src: url("../assets/fonts/PlusJakartaSans-Light.ttf") format("truetype"),
+  url("../assets/fonts/PlusJakartaSans-Regular.ttf") format("truetype"),
+  url("../assets/fonts/PlusJakartaSans-Medium.ttf") format("truetype"),
+  url("../assets/fonts/PlusJakartaSans-SemiBold.ttf") format("truetype"),
+  url("../assets/fonts/PlusJakartaSans-Bold.ttf") format("truetype"),
+  url("../assets/fonts/PlusJakartaSans-ExtraBold.ttf") format("truetype");
+}
 /* reset code */
 * {
   margin: 0;
@@ -46,7 +27,7 @@ img {
 
 /* global styles */
 :root {
-  --font-family: "Jakarta-bold";
+  --font-family: "Jakarta-Font";
 }
 
 /* container */

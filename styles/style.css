@@ -117,6 +117,9 @@ img {
 .banner {
   padding: 96px 0px;
 }
+.banner .container .content {
+  text-align: center;
+}
 .banner .container .content h4 {
   font-family: var(--font-family);
   font-weight: 600;
@@ -125,6 +128,10 @@ img {
   letter-spacing: -0.01em;
   text-align: center;
   color: #4f46e5;
+  border-radius: 1234px;
+  padding: 6px 12px;
+  display: inline-block;
+  background: #eef2ff;
 }
 .banner .container .content h1 {
   font-family: var(--font-family);

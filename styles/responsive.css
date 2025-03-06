@@ -7,19 +7,28 @@
 }
 /* lg */
 @media screen and (min-width: 1023px) {
-    .navbar .container {
-        flex-direction: row;
-      }
-      .navbar .container ul {
-        flex-basis: auto;
-        flex-direction: row;
-      }
-      .navbar .brand {
-        width: auto;
-      }
-      .navbar .container .nav_button {
-        margin-top: 0px;
-      }
+  .navbar .container {
+    flex-wrap: nowrap;
+    background: transparent;
+    z-index: 999999999;
+  }
+  .navbar .container .navbar_collapse {
+    flex-grow: 1;
+    align-items: center;
+    flex-direction: row;
+    padding: 0px;
+    background: #fff;
+    position: static;
+  }
+  .navbar .container .navbar_collapse .menu {
+    display: flex;
+    column-gap: 32px;
+    margin: 0 auto;
+    flex-direction: row;
+  }
+  .navbar .container .navbar_collapse .nav_button {
+    margin-top: 0px;
+  }
 }
 /* xl */
 

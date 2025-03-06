@@ -1,10 +1,22 @@
-@media screen and (min-width: 639px) {}
+/* sm */
+@media screen and (min-width: 639px) {
+}
 
-@media screen and (min-width: 767px) {}
+/* md */
+@media screen and (min-width: 767px) {
+}
+/* lg */
+@media screen and (min-width: 1023px) {
+  .navbar .container ul {
+    position: static;
+    flex-direction: row;
+  }
+}
+/* xl */
 
-@media screen and (min-width: 1023px) {}
+@media screen and (min-width: 1279px) {
+}
+/* 2xl */
 
-@media screen and (min-width: 1279px) {}
-
-@media screen and (min-width: 1536px) {}
-
+@media screen and (min-width: 1536px) {
+}

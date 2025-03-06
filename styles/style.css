@@ -72,9 +72,6 @@ img {
 .container .nav_button .login {
   border-radius: 1234px;
   padding: 12px 20px;
-  width: 86px;
-  height: 48px;
-  min-height: 48px;
   background: #4f46e5;
   font-family: var(--font-family);
   font-weight: 700;
@@ -83,3 +80,22 @@ img {
   letter-spacing: -0.01em;
   color: #fff;
 }
+/* 
+.navbar .container {
+  position: relative;
+}
+.navbar .container ul{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  top: 100%;  
+}
+.navbar .container .nav_button{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 100%;
+} */

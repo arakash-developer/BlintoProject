@@ -346,6 +346,7 @@ img {
 }
 .procrastinators .container .procrastinators_inner {
   margin-top: 64px;
+  row-gap: 64px;
 }
 .procrastinators .container .procrastinators_inner .procrastinators_left {
   height: 100%;
@@ -411,4 +412,5 @@ img {
 }
 .procrastinators .container .procrastinators_inner .procrastinators_right img {
   border-radius: 32px;
+  width: 100%;
 }

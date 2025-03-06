@@ -117,6 +117,8 @@ img {
 .navbar .container .navbar_collapse .nav_button {
   margin-top: 20px;
 }
+
+/* banner */
 .banner {
   padding: 96px 0px;
   background: url("../assets/banner/banner.png") no-repeat center center/cover;
@@ -163,4 +165,13 @@ img {
 .banner .container .content .banner_button {
   margin: 64px 0px;
   gap: 8px;
+}
+
+/* brands */
+.brands {
+  padding: 64px 0px;
+}
+.brands .container {
+  column-gap: 64px;
+  row-gap: 32px;
 }

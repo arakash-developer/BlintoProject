@@ -1,13 +1,5 @@
 /* set  font */
-@font-face {
-  font-family: "Jakarta-Font";
-  src: url("../assets/fonts/PlusJakartaSans-Light.ttf") format("truetype"),
-    url("../assets/fonts/PlusJakartaSans-Regular.ttf") format("truetype"),
-    url("../assets/fonts/PlusJakartaSans-Medium.ttf") format("truetype"),
-    url("../assets/fonts/PlusJakartaSans-SemiBold.ttf") format("truetype"),
-    url("../assets/fonts/PlusJakartaSans-Bold.ttf") format("truetype"),
-    url("../assets/fonts/PlusJakartaSans-ExtraBold.ttf") format("truetype");
-}
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
 /* reset code */
 * {
   margin: 0;
@@ -26,7 +18,7 @@ img {
 
 /* global styles */
 :root {
-  --font-family: "Jakarta-Font";
+  --font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 /* container */
@@ -121,4 +113,38 @@ img {
 }
 .navbar .container .navbar_collapse .nav_button {
   margin-top: 20px;
+}
+.banner {
+  padding: 96px 0px;
+}
+.banner .container .content h4 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 143%;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: #4f46e5;
+}
+.banner .container .content h1 {
+  font-family: var(--font-family);
+  font-weight: 800;
+  font-size: 60px;
+  line-height: 113%;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #1e293b;
+  margin: 24px 0px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.banner .container .content p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  text-align: center;
+  color: #475569;
 }

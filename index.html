@@ -10,11 +10,13 @@
   </head>
   <body>
     <nav class="navbar">
-      <div class="container flex lg-flex-row flex-col justify-between items-center">
+      <div
+        class="container flex lg-flex-row  justify-between items-center"
+      >
         <a href="/" class="logo">
-          <img src="./images/logo.png" alt="Blinto Logo" />
+          <img src="./assets/brands/Logo.png" alt="Blinto Logo" />
         </a>
-        <ul class="menu flex items-center">
+        <ul class="menu hidden lg-flex items-center">
           <li class="nav-item">
             <a href="/" class="nav-link">Features</a>
           </li>
@@ -31,14 +33,18 @@
             <a href="/" class="nav-link">Contact</a>
           </li>
         </ul>
-        <div class="nav_button flex align-start">
+        <div class="nav_button flex align-start hidden lg-flex">
           <a href="contact.html" class="signup">Sign Up</a>
           <a href="contact.html" class="login">Log In</a>
         </div>
+        <div class="hamburger">
+          <img
+            class="hamburger-icon lg-hidden"
+            src="./assets/icons/hamburger.png"
+            alt="hamburger"
+          />
+        </div>
       </div>
     </nav>
-
-
-
   </body>
 </html>

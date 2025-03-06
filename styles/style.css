@@ -454,14 +454,14 @@ img {
 }
 .testimonial .container .testimonial_inner {
   margin-top: 64px;
+  gap: 32px;
 }
 .testimonial .container .testimonial_inner .review_box {
   padding: 24px;
   border: 1px solid #e2e8f0;
   border-radius: 24px;
   padding: 24px;
-  width: 384px;
-  height: 284px;
+  width: 100%;
   background: #f8fafc;
 }
 .testimonial .container .testimonial_inner .review_box .icons {
@@ -471,7 +471,7 @@ img {
   color: #f59e0b;
 }
 .testimonial .container .testimonial_inner .review_box p.review_text {
-  padding: 12px 0px;
+  margin: 24px 0px;
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 18px;
@@ -501,3 +501,6 @@ img {
   color: #475569;
 }
 /* End Testimonial */
+.hhh{
+  gap: 32px;
+}

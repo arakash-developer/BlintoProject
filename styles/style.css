@@ -28,6 +28,7 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
+/* end container */
 
 /* navbar  */
 .navbar {
@@ -117,6 +118,7 @@ img {
 .navbar .container .navbar_collapse .nav_button {
   margin-top: 20px;
 }
+/* end navbar */
 
 /* banner */
 .banner {
@@ -166,6 +168,7 @@ img {
   margin: 64px 0px;
   gap: 8px;
 }
+/* End Banner */
 
 /* brands */
 .brands {
@@ -175,6 +178,7 @@ img {
   column-gap: 64px;
   row-gap: 32px;
 }
+/* End Brands */
 
 /* features */
 .features {

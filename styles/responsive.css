@@ -19,6 +19,7 @@
     padding: 0px;
     background: #fff;
     position: static;
+    display: flex;
   }
   .navbar .container .navbar_collapse .menu {
     display: flex;

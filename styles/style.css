@@ -252,6 +252,12 @@ img {
   max-width: 800px;
   margin-inline: auto;
 }
+.work_lazy .container .heading > span {
+  border-radius: 123px;
+  width: 56px;
+  height: 56px;
+  background: #eef2ff;
+}
 .work_lazy .container .heading > h2 {
   font-family: var(--font-family);
   font-weight: 800;
@@ -261,7 +267,7 @@ img {
   text-align: center;
   color: #1e293b;
 }
-.work_lazy .container > .heading p {
+.work_lazy .container .heading > p {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 20px;

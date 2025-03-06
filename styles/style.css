@@ -344,3 +344,71 @@ img {
   line-height: 160%;
   color: #475569;
 }
+.procrastinators .container .procrastinators_inner {
+  margin-top: 64px;
+}
+.procrastinators .container .procrastinators_inner .procrastinators_left {
+  height: 100%;
+  align-items: start;
+}
+.procrastinators .container .procrastinators_inner .procrastinators_left {
+  gap: 8px;
+}
+.procrastinators
+  .container
+  .procrastinators_inner
+  .procrastinators_left
+  .procrastinators_left_inner {
+  height: 100%;
+  cursor: pointer;
+}
+.procrastinators
+  .container
+  .procrastinators_inner
+  .procrastinators_left
+  .procrastinators_left_inner
+  .line {
+  border-left: 5px solid #e0e7ff;
+  margin-right: 24px;
+  height: 140px;
+  border-radius: 1234px;
+}
+.procrastinators
+  .container
+  .procrastinators_inner
+  .procrastinators_left
+  .procrastinators_left_inner.active
+  .line {
+  border-color: #4f46e5;
+}
+.procrastinators
+  .container
+  .procrastinators_inner
+  .procrastinators_left
+  .procrastinators_left_inner
+  .content
+  h3 {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: -0.01em;
+  color: #475569;
+}
+.procrastinators
+  .container
+  .procrastinators_inner
+  .procrastinators_left_inner
+  .content
+  p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #475569;
+  margin-top: 12px;
+  max-width: 468px;
+}
+.procrastinators .container .procrastinators_inner .procrastinators_right img {
+  border-radius: 32px;
+}

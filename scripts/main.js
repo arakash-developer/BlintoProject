@@ -65,6 +65,7 @@ let lodemore = (itemperpage = 3) => {
   let displayperdata = reviews.slice(currentpage, currentpage + itemperpage);
   displayperdata.forEach((item) => {
     let div = document.createElement("div");
+    // div.classList.add("testimonial_box");
     div.innerHTML = `
      <div class="testimonial_inner flex flex-col">
     <div class="review_box">
@@ -116,6 +117,12 @@ loadmorebtn.addEventListener("click", () => {
 });
 
 window.addEventListener("resize", function () {
+  if (window.innerWidth > 766) {
+    lodemore(reviews.length);
+  }
+});
+
+window.addEventListener("load", function () {
   if (window.innerWidth > 766) {
     lodemore(reviews.length);
   }

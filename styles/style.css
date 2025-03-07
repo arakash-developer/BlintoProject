@@ -420,7 +420,7 @@ img {
 .testimonial {
   padding: 96px 0px;
 }
-.testimonial_grid {
+.testimonial .testimonial_grid {
   gap: 32px;
 }
 .testimonial .container .load_more {

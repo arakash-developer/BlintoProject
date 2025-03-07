@@ -63,43 +63,48 @@ navbarButton.addEventListener("click", function () {
 
 let currentpage = 0;
 
-let lodemore = (itemperpage = 3) => {
+let lodemore = (itemperpage = 6) => {
   console.log("itemperpage", itemperpage);
   console.log("currentpage", currentpage);
   let displayperdata = reviews.slice(currentpage, currentpage + itemperpage);
   console.log("displayperdata length", displayperdata.length);
+  let columnCount =
+    displayperdata.length / selectedClass === ".a"
+      ? 1
+      : displayperdata.length / selectedClass === ".b"
+      ? 2
+      : 3;
   displayperdata.forEach((item) => {
     let div = document.createElement("div");
     // div.classList.add("testimonial_box");
+
     div.innerHTML = `
-     <div class="testimonial_inner flex flex-col">
-    <div class="review_box">
-              <div class="icons flex items-center">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star-half-stroke"></i>
-                <i class="fa-regular fa-star"></i>
-              </div>
-              <p class="review_text">
-              ${item.text}
-              </p>
-              <div class="flex avatar_details items-center">
-                <img src=${item.image} alt="" />
-                <div class="avatar_info">
-                  <h3>${item.author}</h3>
-                  <p>${item.author_title}</p>
+       <div class="testimonial_inner flex flex-col ">
+      <div class="review_box">
+                <div class="icons flex items-center">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <p class="review_text">
+                ${item.text}
+                </p>
+                <div class="flex avatar_details items-center">
+                  <img src=${item.image} alt="" />
+                  <div class="avatar_info">
+                    <h3>${item.author}</h3>
+                    <p>${item.author_title}</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            </div>
-`;
+              </div>
+  `;
     console.log("selectedClass", selectedClass, item);
     document.querySelector(selectedClass).appendChild(div);
   });
 };
-
-// lodemore();
 
 let loadless = () => {
   currentpage = 0;
@@ -110,23 +115,11 @@ let loadless = () => {
 
 loadmorebtn.addEventListener("click", () => {
   if (currentpage >= reviews.length) {
-    // loadless();
+    alert("No more data");
   } else {
     lodemore();
   }
 });
-
-// window.addEventListener("resize", function () {
-//   if (window.innerWidth > 766) {
-//     lodemore(reviews.length);
-//   }
-// });
-
-// window.addEventListener("load", function () {
-//   if (window.innerWidth > 766) {
-//     lodemore(reviews.length);
-//   }
-// });
 
 const a = document.querySelector(".a");
 const b = document.querySelector(".b");
@@ -181,15 +174,10 @@ let adjustReview = (column) => {
   }
 };
 
-// window.addEventListener("resize", function () {
-//   if (window.innerWidth > 766) {
-//     lodemore(reviews.length);
-//   }
-// });
-
 let refreshlayout = () => {
   if (0 <= window.innerWidth && window.innerWidth <= 766) {
     selectedClass = ".a";
+    a.innerHTML = "";
     b.innerHTML = "";
     c.innerHTML = "";
     console.log("selectedClass", selectedClass);
@@ -197,6 +185,7 @@ let refreshlayout = () => {
   } else if (767 <= window.innerWidth && window.innerWidth <= 991) {
     selectedClass = ".b";
     a.innerHTML = "";
+    b.innerHTML = "";
     c.innerHTML = "";
     console.log("selectedClass", selectedClass);
     adjustReview(2);
@@ -204,6 +193,7 @@ let refreshlayout = () => {
     selectedClass = ".c";
     a.innerHTML = "";
     b.innerHTML = "";
+    c.innerHTML = "";
     console.log("selectedClass", selectedClass);
     adjustReview(3);
   } else {
@@ -213,18 +203,6 @@ let refreshlayout = () => {
   }
 };
 
-// window.addEventListener("resize", function () {
-//   if (0 < window.innerWidth && window.innerWidth <= 766) {
-//     refreshlayout();
-//   }
-//   if (767 <= window.innerWidth && window.innerWidth <= 991) {
-//     refreshlayout();
-//   }
-//   if (992 <= window.innerWidth) {
-//     refreshlayout();
-//   }
-// });
-
-window.addEventListener("load", refreshlayout);
+refreshlayout();
 
 window.addEventListener("resize", refreshlayout);

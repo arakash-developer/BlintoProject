@@ -36,6 +36,22 @@ let reviews = [
     author: "Oarack Babama",
     author_title: "Former President of US",
   },
+  {
+    id: 5,
+    review: "4.5",
+    text: "Accumsan tortor posuere ac ut consequat. Quis varius quam quisque id diam vel. Commodo odio aenean sed adipiscing diam donec adipiscing. Vel pharetra vel turpis nunc eget.",
+    image: "./assets/testimonial/avatar5.png",
+    author: "Saylor Twift",
+    author_title: "Famous Singer",
+  },
+  {
+    id: 6,
+    review: "3.5",
+    text: "Accumsan tortor posuere ac ut consequat. Quis varius quam quisque id diam vel. Commodo odio aenean sed adipiscing diam donec adipiscing. Vel pharetra vel turpis nunc eget.",
+    image: "./assets/testimonial/avatar6.png",
+    author: "Asuna Yuuki",
+    author_title: "Virtual Swordsman",
+  },
 ];
 
 navbarButton.addEventListener("click", function () {

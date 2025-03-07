@@ -44,8 +44,8 @@ navbarButton.addEventListener("click", function () {
 });
 
 let currentpage = 0;
-let itemperpage = 3;
-let lodemore = () => {
+
+let lodemore = (itemperpage = 3) => {
   let displayperdata = reviews.slice(currentpage, currentpage + itemperpage);
   displayperdata.forEach((item) => {
     let div = document.createElement("div");
@@ -82,15 +82,25 @@ let lodemore = () => {
   }
 };
 
+lodemore();
+
 let loadless = () => {
   currentpage = 0;
   testimonialContainer.innerHTML = "";
+  lodemore();
   loadmorebtnInner.textContent = "Load More";
 };
+
 loadmorebtn.addEventListener("click", () => {
   if (currentpage >= reviews.length) {
     loadless();
   } else {
     lodemore();
+  }
+});
+
+window.addEventListener("resize", function () {
+  if (window.innerWidth > 766) {
+    lodemore(reviews.length);
   }
 });

@@ -420,6 +420,30 @@ img {
 .testimonial {
   padding: 96px 0px;
 }
+.testimonial_grid {
+  gap: 32px;
+}
+
+.testimonial .container .load_more {
+  margin-top: 32px;
+}
+.testimonial .container .load_more button {
+  font-family: var(--font-family);
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 143%;
+  gap: 8px;
+  letter-spacing: -0.01em;
+  color: #fff;
+  border: 0;
+  border-radius: 1234px;
+  padding: 10px 16px;
+  width: 100%;
+  height: 40px;
+  background: #4f46e5;
+}
+
 .testimonial .container .heading > h4 {
   font-family: var(--font-family);
   font-weight: 600;
@@ -501,6 +525,3 @@ img {
   color: #475569;
 }
 /* End Testimonial */
-.hhh{
-  gap: 32px;
-}

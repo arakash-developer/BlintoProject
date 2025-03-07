@@ -1,0 +1,192 @@
+ <div class="testimonial_inner flex flex-col">
+            <div class="review_box">
+              <div class="icons flex items-center">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="review_text">
+                Lorem ipsum dolor sit amet, consectetur ad-zzz-ing elit. Proin
+                vel urna at metus tempor mattis, or not, whatever. Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Eius, maxime?
+              </p>
+              <div class="flex avatar_details items-center">
+                <img src="./assets/testimonial/avatar1.png" alt="" />
+                <div class="avatar_info">
+                  <h3>X_AE_A-13</h3>
+                  <p>Product Designer, slothUI</p>
+                </div>
+              </div>
+            </div>
+            <div class="review_box">
+              <div class="icons flex items-center">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <p class="review_text">
+                Posuere urna nec tincidunt praesent semper feugiat nibh sed.
+                Velit dignissim sodales ut eu.
+              </p>
+              <div class="flex avatar_details items-center">
+                <img src="./assets/testimonial/avatar2.png" alt="" />
+                <div class="avatar_info">
+                  <h3>Azunyan U. Wu</h3>
+                  <p>CEO, nextlife.ai</p>
+                </div>
+              </div>
+            </div>
+            <div class="review_box">
+              <div class="icons flex items-center">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <p class="review_text">
+                Sit amet est placerat in. Blandit cursus risus at ultrices mi
+                tempus imperdiet. Volutpat commodo sed egestas egestas fringilla
+                phasellus. Tincidunt eget nullam non nisi. 
+              </p>
+              <div class="flex avatar_details items-center">
+                <img src="./assets/testimonial/avatar3.png" alt="" />
+                <div class="avatar_info">
+                  <h3>X_AE_A-13</h3>
+                  <p>Product Designer, slothUI</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial_inner flex flex-col">
+            <div class="review_box">
+              <div class="icons flex items-center">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <p class="review_text">
+                Posuere urna nec tincidunt praesent semper feugiat nibh sed.
+                Velit dignissim sodales ut eu.
+              </p>
+              <div class="flex avatar_details items-center">
+                <img src="./assets/testimonial/avatar2.png" alt="" />
+                <div class="avatar_info">
+                  <h3>Azunyan U. Wu</h3>
+                  <p>CEO, nextlife.ai</p>
+                </div>
+              </div>
+            </div>
+            <div class="review_box">
+              <div class="icons flex items-center">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="review_text">
+                Lorem ipsum dolor sit amet, consectetur ad-zzz-ing elit. Proin
+                vel urna at metus tempor mattis, or not, whatever. Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Eius, maxime?
+              </p>
+              <div class="flex avatar_details items-center">
+                <img src="./assets/testimonial/avatar1.png" alt="" />
+                <div class="avatar_info">
+                  <h3>X_AE_A-13</h3>
+                  <p>Product Designer, slothUI</p>
+                </div>
+              </div>
+            </div>
+            <div class="review_box">
+              <div class="icons flex items-center">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <p class="review_text">
+                Sit amet est placerat in. Blandit cursus risus at ultrices mi
+                tempus imperdiet. Volutpat commodo sed egestas egestas fringilla
+                phasellus. Tincidunt eget nullam non nisi. 
+              </p>
+              <div class="flex avatar_details items-center">
+                <img src="./assets/testimonial/avatar3.png" alt="" />
+                <div class="avatar_info">
+                  <h3>X_AE_A-13</h3>
+                  <p>Product Designer, slothUI</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial_inner flex flex-col md-hidden lg-flex">
+            <div class="review_box">
+              <div class="icons flex items-center">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="review_text">
+                Lorem ipsum dolor sit amet, consectetur ad-zzz-ing elit. Proin
+                vel urna at metus tempor mattis, or not, whatever. Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Eius, maxime?
+              </p>
+              <div class="flex avatar_details items-center">
+                <img src="./assets/testimonial/avatar1.png" alt="" />
+                <div class="avatar_info">
+                  <h3>X_AE_A-13</h3>
+                  <p>Product Designer, slothUI</p>
+                </div>
+              </div>
+            </div>
+            <div class="review_box">
+              <div class="icons flex items-center">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <p class="review_text">
+                Posuere urna nec tincidunt praesent semper feugiat nibh sed.
+                Velit dignissim sodales ut eu.
+              </p>
+              <div class="flex avatar_details items-center">
+                <img src="./assets/testimonial/avatar2.png" alt="" />
+                <div class="avatar_info">
+                  <h3>Azunyan U. Wu</h3>
+                  <p>CEO, nextlife.ai</p>
+                </div>
+              </div>
+            </div>
+            <div class="review_box">
+              <div class="icons flex items-center">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <p class="review_text">
+                Sit amet est placerat in. Blandit cursus risus at ultrices mi
+                tempus imperdiet. Volutpat commodo sed egestas egestas fringilla
+                phasellus. Tincidunt eget nullam non nisi. 
+              </p>
+              <div class="flex avatar_details items-center">
+                <img src="./assets/testimonial/avatar3.png" alt="" />
+                <div class="avatar_info">
+                  <h3>X_AE_A-13</h3>
+                  <p>Product Designer, slothUI</p>
+                </div>
+              </div>
+            </div>
+          </div>

@@ -116,14 +116,13 @@ loadmorebtn.addEventListener("click", () => {
   }
 });
 
-window.addEventListener("resize", function () {
+let adjustMent = () => {
   if (window.innerWidth > 766) {
     lodemore(reviews.length);
+  }else{
+    loadless();
   }
-});
+};
 
-window.addEventListener("load", function () {
-  if (window.innerWidth > 766) {
-    lodemore(reviews.length);
-  }
-});
+window.addEventListener("resize", adjustMent);
+window.addEventListener("load", adjustMent);

@@ -421,7 +421,6 @@ img {
   padding: 96px 0px;
 }
 .testimonial .testimonial_grid {
-  margin-top: 64px;
   gap: 32px;
 }
 .testimonial .container .load_more {
@@ -475,6 +474,10 @@ img {
   line-height: 160%;
   text-align: center;
   color: #475569;
+}
+.testimonial .container .testimonial_inner {
+  margin-top: 64px;
+  gap: 32px;
 }
 .testimonial .container .testimonial_inner .review_box {
   padding: 24px;

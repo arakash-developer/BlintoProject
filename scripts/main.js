@@ -1,3 +1,5 @@
+let selectedClass = "";
+
 let navbarButton = document.querySelector(".navabar_toggler");
 let navbarCollapse = document.querySelector(".navbar_collapse");
 const testimonialContainer = document.querySelector(".testimonial_container");
@@ -62,7 +64,10 @@ navbarButton.addEventListener("click", function () {
 let currentpage = 0;
 
 let lodemore = (itemperpage = 3) => {
+  console.log("itemperpage", itemperpage);
+  console.log("currentpage", currentpage);
   let displayperdata = reviews.slice(currentpage, currentpage + itemperpage);
+  console.log("displayperdata length", displayperdata.length);
   displayperdata.forEach((item) => {
     let div = document.createElement("div");
     // div.classList.add("testimonial_box");
@@ -89,41 +94,137 @@ let lodemore = (itemperpage = 3) => {
             </div>
             </div>
 `;
-
-    testimonialContainer.appendChild(div);
+    console.log("selectedClass", selectedClass, item);
+    document.querySelector(selectedClass).appendChild(div);
   });
-  currentpage += itemperpage;
-
-  if (currentpage >= reviews.length) {
-    loadmorebtnInner.textContent = "Load Less";
-  }
 };
 
-lodemore();
+// lodemore();
 
 let loadless = () => {
   currentpage = 0;
-  testimonialContainer.innerHTML = "";
+  selectedClass.innerHTML = "";
   lodemore();
   loadmorebtnInner.textContent = "Load More";
 };
 
 loadmorebtn.addEventListener("click", () => {
   if (currentpage >= reviews.length) {
-    loadless();
+    // loadless();
   } else {
     lodemore();
   }
 });
 
-window.addEventListener("resize", function () {
-  if (window.innerWidth > 766) {
-    lodemore(reviews.length);
-  }
-});
+// window.addEventListener("resize", function () {
+//   if (window.innerWidth > 766) {
+//     lodemore(reviews.length);
+//   }
+// });
 
-window.addEventListener("load", function () {
-  if (window.innerWidth > 766) {
-    lodemore(reviews.length);
+// window.addEventListener("load", function () {
+//   if (window.innerWidth > 766) {
+//     lodemore(reviews.length);
+//   }
+// });
+
+const a = document.querySelector(".a");
+const b = document.querySelector(".b");
+const c = document.querySelector(".c");
+let adjustReview = (column) => {
+  console.log("column", column);
+
+  switch (column) {
+    case 1: {
+      if (b.classList.contains("grid") || c.classList.contains("grid")) {
+        a.classList.remove("hidden");
+        b.classList.remove("grid");
+        c.classList.remove("grid");
+        b.classList.add("hidden");
+        c.classList.add("hidden");
+      }
+      a.classList.add("grid");
+      lodemore();
+      break;
+    }
+    case 2: {
+      if (a.classList.contains("grid") || c.classList.contains("grid")) {
+        a.classList.remove("grid");
+        c.classList.remove("grid");
+        b.classList.remove("hidden");
+        a.classList.add("hidden");
+        c.classList.add("hidden");
+      }
+      b.classList.add("grid");
+
+      lodemore();
+
+      break;
+    }
+    case 3: {
+      if (a.classList.contains("grid") || b.classList.contains("grid")) {
+        a.classList.remove("grid");
+        b.classList.remove("grid");
+        c.classList.remove("hidden");
+        a.classList.add("hidden");
+        b.classList.add("hidden");
+      }
+      c.classList.add("grid");
+
+      lodemore();
+
+      break;
+    }
+    default:
+      lodemore();
+      break;
   }
-});
+};
+
+// window.addEventListener("resize", function () {
+//   if (window.innerWidth > 766) {
+//     lodemore(reviews.length);
+//   }
+// });
+
+let refreshlayout = () => {
+  if (0 <= window.innerWidth && window.innerWidth <= 766) {
+    selectedClass = ".a";
+    b.innerHTML = "";
+    c.innerHTML = "";
+    console.log("selectedClass", selectedClass);
+    adjustReview(1);
+  } else if (767 <= window.innerWidth && window.innerWidth <= 991) {
+    selectedClass = ".b";
+    a.innerHTML = "";
+    c.innerHTML = "";
+    console.log("selectedClass", selectedClass);
+    adjustReview(2);
+  } else if (992 <= window.innerWidth) {
+    selectedClass = ".c";
+    a.innerHTML = "";
+    b.innerHTML = "";
+    console.log("selectedClass", selectedClass);
+    adjustReview(3);
+  } else {
+    selectedClass = ".a";
+    console.log("selectedClass", selectedClass);
+    adjustReview(1);
+  }
+};
+
+// window.addEventListener("resize", function () {
+//   if (0 < window.innerWidth && window.innerWidth <= 766) {
+//     refreshlayout();
+//   }
+//   if (767 <= window.innerWidth && window.innerWidth <= 991) {
+//     refreshlayout();
+//   }
+//   if (992 <= window.innerWidth) {
+//     refreshlayout();
+//   }
+// });
+
+window.addEventListener("load", refreshlayout);
+
+window.addEventListener("resize", refreshlayout);

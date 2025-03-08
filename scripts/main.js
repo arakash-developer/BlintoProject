@@ -15,26 +15,26 @@ let reviews = [
   {
     id: 2,
     review: "3.5",
-    text: "Posuere urna nec tincidunt praesent semper feugiat nibh sed. Velit dignissim sodales ut eu.",
-    image: "./assets/testimonial/avatar2.png",
-    author: "Azunyan U. Wu",
-    author_title: "CEO, nextlife.ai",
-  },
-  {
-    id: 3,
-    review: "4",
-    text: "Sit amet est placerat in. Blandit cursus risus at ultrices mi tempus imperdiet. Volutpat commodo sed egestas egestas fringilla phasellus. Tincidunt eget nullam non nisi. ",
-    image: "./assets/testimonial/avatar3.png",
-    author: "Mechatronics Yi",
-    author_title: "CTO, fin4win.ai",
-  },
-  {
-    id: 4,
-    review: "3.5",
     text: "Nisi porta lorem mollis aliquam ut porttitor leo. Sed odio morbi quis commodo. Arcu non odio euismod lacinia at quis. Nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur vitae.",
     image: "./assets/testimonial/avatar4.png",
     author: "Oarack Babama",
     author_title: "Former President of US",
+  },
+  {
+    id: 3,
+    review: "2.5",
+    text: "Sagittis eu volutpat odio facilisis mauris sit amet massa. Urna et pharetra pharetra massa.",
+    image: "./assets/testimonial/avatar7.png",
+    author: "Boe Jiden",
+    author_title: "Former President Of Canada",
+  },
+  {
+    id: 4,
+    review: "3.5",
+    text: "Posuere urna nec tincidunt praesent semper feugiat nibh sed. Velit dignissim sodales ut eu.",
+    image: "./assets/testimonial/avatar2.png",
+    author: "Azunyan U. Wu",
+    author_title: "CEO, nextlife.ai",
   },
   {
     id: 5,
@@ -46,6 +46,22 @@ let reviews = [
   },
   {
     id: 6,
+    review: "5",
+    text: " Cras fermentum odio eu feugiat pretium nibh ipsum consequat nisl. Nec nam aliquam sem et tortor consequat id porta nibh. Viverra suspendisse. Lacus sed viverra tellus in hac habitasse platea dictumst. Elit at imperdiet dui accumsan.",
+    image: "./assets/testimonial/avatar8.png",
+    author: "Vermillion D. Gray",
+    author_title: "CEO, hacklife.ai",
+  },
+  {
+    id: 7,
+    review: "4",
+    text: "Sit amet est placerat in. Blandit cursus risus at ultrices mi tempus imperdiet. Volutpat commodo sed egestas egestas fringilla phasellus. Tincidunt eget nullam non nisi. ",
+    image: "./assets/testimonial/avatar3.png",
+    author: "Mechatronics Yi",
+    author_title: "CTO, fin4win.ai",
+  },
+  {
+    id: 8,
     review: "3.5",
     text: "Accumsan tortor posuere ac ut consequat. Quis varius quam quisque id diam vel. Commodo odio aenean sed adipiscing diam donec adipiscing. Vel pharetra vel turpis nunc eget.",
     image: "./assets/testimonial/avatar6.png",
@@ -53,28 +69,12 @@ let reviews = [
     author_title: "Virtual Swordsman",
   },
   {
-    id: 6,
+    id: 9,
     review: "3.5",
-    text: "Accumsan tortor posuere ac ut consequat. Quis varius quam quisque id diam vel. Commodo odio aenean sed adipiscing diam donec adipiscing. Vel pharetra vel turpis nunc eget.",
-    image: "./assets/testimonial/avatar6.png",
-    author: "Asuna Yuuki",
-    author_title: "Virtual Swordsman",
-  },
-  {
-    id: 6,
-    review: "3.5",
-    text: "Accumsan tortor posuere ac ut consequat. Quis varius quam quisque id diam vel. Commodo odio aenean sed adipiscing diam donec adipiscing. Vel pharetra vel turpis nunc eget.",
-    image: "./assets/testimonial/avatar6.png",
-    author: "Asuna Yuuki",
-    author_title: "Virtual Swordsman",
-  },
-  {
-    id: 6,
-    review: "3.5",
-    text: "Accumsan tortor posuere ac ut consequat. Quis varius quam quisque id diam vel. Commodo odio aenean sed adipiscing diam donec adipiscing. Vel pharetra vel turpis nunc eget.",
-    image: "./assets/testimonial/avatar6.png",
-    author: "Asuna Yuuki",
-    author_title: "Virtual Swordsman",
+    text: "Viverra accumsan in nisl nisi scelerisque eu. Vitae congue eu consequat ac felis donec.",
+    image: "./assets/testimonial/avatar9.png",
+    author: "Zuckman Wu",
+    author_title: "CEO, tech4life.ai",
   },
 ];
 
@@ -138,7 +138,7 @@ loadmorebtn.addEventListener("click", () => {
   }
 });
 
-let desktopLoad = (arr, size) => {
+let divideArrayIntoChunks = (arr, size) => {
   result = [];
   for (let i = 0; i < arr.length; i += size) {
     result.push(arr.slice(i, i + size));
@@ -149,7 +149,7 @@ let desktopLoad = (arr, size) => {
 let adjustMent = () => {
   if (window.innerWidth <= 1022 && window.innerWidth > 766) {
     console.log("tablet");
-    let reviewsdevide = desktopLoad(reviews, 2);
+    let reviewsdevide = divideArrayIntoChunks(reviews, 2);
     reviewsdevide.forEach((item) => {
       let div = document.createElement("div");
       // div.classList.add("testimonial_box");
@@ -198,12 +198,9 @@ let adjustMent = () => {
   `;
       testimonialContainer.appendChild(div);
     });
-    // testimonialContainer.appendChild(testimonialContainer);
-    // lodemore(reviews.length);
     testimonialContainer.innerHTML = "";
     reviews.forEach((item) => {
       let div = document.createElement("div");
-      // div.classList.add("testimonial_box");
       div.innerHTML = `
        <div class="testimonial_inner flex flex-col">
       <div class="review_box">
@@ -233,12 +230,11 @@ let adjustMent = () => {
   } else if (window.innerWidth > 1022) {
     testimonialContainer.innerHTML = "";
     console.log("large");
-    let reviewsdevide = desktopLoad(reviews, 3);
+    let reviewsdevide = divideArrayIntoChunks(reviews, 3);
     console.log(reviewsdevide);
 
     reviewsdevide.forEach((item) => {
       let div = document.createElement("div");
-      // div.classList.add("testimonial_box");
       div.innerHTML = `
        <div class="testimonial_inner flex flex-col">
       <div class="review_box">

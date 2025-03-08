@@ -150,9 +150,9 @@ let adjustMent = () => {
   if (window.innerWidth <= 1022 && window.innerWidth > 766) {
     console.log("tablet");
     let reviewsdevide = divideArrayIntoChunks(reviews, 2);
+    console.log(reviewsdevide);
     reviewsdevide.forEach((item) => {
       let div = document.createElement("div");
-      // div.classList.add("testimonial_box");
       div.innerHTML = `
        <div class="testimonial_inner flex flex-col custom">
       <div class="review_box">
@@ -164,13 +164,13 @@ let adjustMent = () => {
                   <i class="fa-regular fa-star"></i>
                 </div>
                 <p class="review_text">
-                ${item[0].text}
+                ${item[0]?.text}
                 </p>
                 <div class="flex avatar_details items-center">
-                  <img src=${item[0].image} alt="" />
+                  <img src=${item[0]?.image} alt="" />
                   <div class="avatar_info">
-                    <h3>${item[0].author}</h3>
-                    <p>${item[0].author_title}</p>
+                    <h3>${item[0]?.author}</h3>
+                    <p>${item[0]?.author_title}</p>
                   </div>
                 </div>
               </div>
@@ -183,13 +183,13 @@ let adjustMent = () => {
                   <i class="fa-regular fa-star"></i>
                 </div>
                 <p class="review_text">
-                ${item[1].text}
+                ${item[1]?.text}
                 </p>
                 <div class="flex avatar_details items-center">
-                  <img src=${item[1].image} alt="" />
+                  <img src=${item[1]?.image} alt="" />
                   <div class="avatar_info">
-                    <h3>${item[1].author}</h3>
-                    <p>${item[1].author_title}</p>
+                    <h3>${item[1]?.author}</h3>
+                    <p>${item[1]?.author_title}</p>
                   </div>
                 </div>
               </div>

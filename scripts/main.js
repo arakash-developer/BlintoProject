@@ -150,7 +150,6 @@ let adjustMent = () => {
   if (window.innerWidth <= 1022 && window.innerWidth > 766) {
     console.log("tablet");
     let reviewsdevide = divideArrayIntoChunks(reviews, 2);
-    console.log(reviewsdevide);
     reviewsdevide.forEach((item) => {
       let div = document.createElement("div");
       div.innerHTML = `

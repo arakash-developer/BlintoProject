@@ -52,6 +52,30 @@ let reviews = [
     author: "Asuna Yuuki",
     author_title: "Virtual Swordsman",
   },
+  {
+    id: 6,
+    review: "3.5",
+    text: "Accumsan tortor posuere ac ut consequat. Quis varius quam quisque id diam vel. Commodo odio aenean sed adipiscing diam donec adipiscing. Vel pharetra vel turpis nunc eget.",
+    image: "./assets/testimonial/avatar6.png",
+    author: "Asuna Yuuki",
+    author_title: "Virtual Swordsman",
+  },
+  {
+    id: 6,
+    review: "3.5",
+    text: "Accumsan tortor posuere ac ut consequat. Quis varius quam quisque id diam vel. Commodo odio aenean sed adipiscing diam donec adipiscing. Vel pharetra vel turpis nunc eget.",
+    image: "./assets/testimonial/avatar6.png",
+    author: "Asuna Yuuki",
+    author_title: "Virtual Swordsman",
+  },
+  {
+    id: 6,
+    review: "3.5",
+    text: "Accumsan tortor posuere ac ut consequat. Quis varius quam quisque id diam vel. Commodo odio aenean sed adipiscing diam donec adipiscing. Vel pharetra vel turpis nunc eget.",
+    image: "./assets/testimonial/avatar6.png",
+    author: "Asuna Yuuki",
+    author_title: "Virtual Swordsman",
+  },
 ];
 
 navbarButton.addEventListener("click", function () {
@@ -99,8 +123,6 @@ let lodemore = (itemperpage = 3) => {
   }
 };
 
-lodemore();
-
 let loadless = () => {
   currentpage = 0;
   testimonialContainer.innerHTML = "";
@@ -116,10 +138,171 @@ loadmorebtn.addEventListener("click", () => {
   }
 });
 
+let desktopLoad = (arr, size) => {
+  result = [];
+  for (let i = 0; i < arr.length; i += size) {
+    result.push(arr.slice(i, i + size));
+  }
+  return result;
+};
+
 let adjustMent = () => {
-  if (window.innerWidth > 766) {
-    lodemore(reviews.length);
-  }else{
+  if (window.innerWidth <= 1022 && window.innerWidth > 766) {
+    console.log("tablet");
+    let reviewsdevide = desktopLoad(reviews, 2);
+    reviewsdevide.forEach((item) => {
+      let div = document.createElement("div");
+      // div.classList.add("testimonial_box");
+      div.innerHTML = `
+       <div class="testimonial_inner flex flex-col custom">
+      <div class="review_box">
+                <div class="icons flex items-center">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <p class="review_text">
+                ${item[0].text}
+                </p>
+                <div class="flex avatar_details items-center">
+                  <img src=${item[0].image} alt="" />
+                  <div class="avatar_info">
+                    <h3>${item[0].author}</h3>
+                    <p>${item[0].author_title}</p>
+                  </div>
+                </div>
+              </div>
+              <div class="review_box">
+                <div class="icons flex items-center">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <p class="review_text">
+                ${item[1].text}
+                </p>
+                <div class="flex avatar_details items-center">
+                  <img src=${item[1].image} alt="" />
+                  <div class="avatar_info">
+                    <h3>${item[1].author}</h3>
+                    <p>${item[1].author_title}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+              </div>
+  `;
+      testimonialContainer.appendChild(div);
+    });
+    // testimonialContainer.appendChild(testimonialContainer);
+    // lodemore(reviews.length);
+    testimonialContainer.innerHTML = "";
+    reviews.forEach((item) => {
+      let div = document.createElement("div");
+      // div.classList.add("testimonial_box");
+      div.innerHTML = `
+       <div class="testimonial_inner flex flex-col">
+      <div class="review_box">
+                <div class="icons flex items-center">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <p class="review_text">
+                ${item.text}
+                </p>
+                <div class="flex avatar_details items-center">
+                  <img src=${item.image} alt="" />
+                  <div class="avatar_info">
+                    <h3>${item.author}</h3>
+                    <p>${item.author_title}</p>
+                  </div>
+                </div>
+              </div>
+              </div>
+  `;
+
+      testimonialContainer.appendChild(div);
+    });
+  } else if (window.innerWidth > 1022) {
+    testimonialContainer.innerHTML = "";
+    console.log("large");
+    let reviewsdevide = desktopLoad(reviews, 3);
+    console.log(reviewsdevide);
+
+    reviewsdevide.forEach((item) => {
+      let div = document.createElement("div");
+      // div.classList.add("testimonial_box");
+      div.innerHTML = `
+       <div class="testimonial_inner flex flex-col">
+      <div class="review_box">
+                <div class="icons flex items-center">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <p class="review_text">
+                ${item[0].text}
+                </p>
+                <div class="flex avatar_details items-center">
+                  <img src=${item[0].image} alt="" />
+                  <div class="avatar_info">
+                    <h3>${item[0].author}</h3>
+                    <p>${item[0].author_title}</p>
+                  </div>
+                </div>
+              </div>
+              <div class="review_box">
+                <div class="icons flex items-center">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>  
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <p class="review_text">
+                ${item[1].text}
+                </p>
+                <div class="flex avatar_details items-center">
+                  <img src=${item[1].image} alt="" />
+                  <div class="avatar_info">
+                    <h3>${item[1].author}</h3>
+                    <p>${item[1].author_title}</p>
+                  </div>
+                </div>
+              </div>
+              <div class="review_box">
+                <div class="icons flex items-center">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <p class="review_text">
+                ${item[2].text}
+                </p>
+                <div class="flex avatar_details items-center">
+                  <img src=${item[2].image} alt="" />
+                  <div class="avatar_info">
+                    <h3>${item[2].author}</h3>
+                    <p>${item[2].author_title}</p>
+                  </div>
+                </div>
+              </div>
+              </div>
+  `;
+      testimonialContainer.appendChild(div);
+    });
+  } else {
     loadless();
   }
 };

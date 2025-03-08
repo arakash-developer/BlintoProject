@@ -421,8 +421,10 @@ img {
   padding: 96px 0px;
 }
 .testimonial .testimonial_grid {
-  margin-top: 64px;
   gap: 32px;
+}
+.testimonial .testimonial_grid .testimonial_inner {
+  row-gap: 32px ;
 }
 .testimonial .container .load_more {
   margin-top: 32px;
@@ -457,6 +459,9 @@ img {
   width: 103px;
   margin: 0px auto;
   background: #eef2ff;
+}
+.testimonial .container .heading {
+    margin-bottom: 64px;
 }
 .testimonial .container .heading > h2 {
   font-family: var(--font-family);
